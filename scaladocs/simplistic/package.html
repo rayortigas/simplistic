@@ -1,0 +1,730 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>simplistic</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../lib/jquery.js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="windowTitle();">
+
+      
+
+      <div id="definition">
+        <img src="../lib/package_big.png" />
+        <h1>simplistic</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">simplistic</span>
+        
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="simplistic.Batch">
+      <a id="Batch:Batch"></a>
+      <h4 class="signature"><a href="Batch.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Batch</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class for creating batch operations that work on a particular item.</p>
+    </li><li visbl="pub" data-isabs="true" name="simplistic.BatchOperations">
+      <a id="BatchOperations:BatchOperations"></a>
+      <h4 class="signature"><a href="BatchOperations.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">BatchOperations</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait that defines batch operations for updating attributes on more than one item at a time.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.BatchPutAttributesResponse">
+      <a id="BatchPutAttributesResponse:BatchPutAttributesResponse"></a>
+      <h4 class="signature"><a href="BatchPutAttributesResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BatchPutAttributesResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ClientConfiguration">
+      <a id="ClientConfiguration:ClientConfiguration"></a>
+      <h4 class="signature"><a href="ClientConfiguration.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ClientConfiguration</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="true" name="simplistic.Concrete">
+      <a id="Concrete:Concrete"></a>
+      <h4 class="signature"><a href="Concrete.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Concrete</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Connection">
+      <a id="Connection:Connection"></a>
+      <h4 class="signature"><a href="Connection.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Connection</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="true" name="simplistic.Consistency">
+      <a id="Consistency:Consistency"></a>
+      <h4 class="signature"><a href="Consistency.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Consistency</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.CreateDomainResponse">
+      <a id="CreateDomainResponse:CreateDomainResponse"></a>
+      <h4 class="signature"><a href="CreateDomainResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">CreateDomainResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.DeleteAttributesResponse">
+      <a id="DeleteAttributesResponse:DeleteAttributesResponse"></a>
+      <h4 class="signature"><a href="DeleteAttributesResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DeleteAttributesResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.DeleteDomainResponse">
+      <a id="DeleteDomainResponse:DeleteDomainResponse"></a>
+      <h4 class="signature"><a href="DeleteDomainResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DeleteDomainResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Domain">
+      <a id="Domain:Domain"></a>
+      <h4 class="signature"><a href="Domain.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Domain</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class which serves as a proxy to a Domain within simpleDB.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.DomainMetadataResponse">
+      <a id="DomainMetadataResponse:DomainMetadataResponse"></a>
+      <h4 class="signature"><a href="DomainMetadataResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DomainMetadataResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.DomainMetadataResult">
+      <a id="DomainMetadataResult:DomainMetadataResult"></a>
+      <h4 class="signature"><a href="DomainMetadataResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DomainMetadataResult</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Error">
+      <a id="Error:Error"></a>
+      <h4 class="signature"><a href="Error.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Error</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Errors">
+      <a id="Errors:Errors"></a>
+      <h4 class="signature"><a href="Errors.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Errors</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.GetAttributesResponse">
+      <a id="GetAttributesResponse:GetAttributesResponse"></a>
+      <h4 class="signature"><a href="GetAttributesResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">GetAttributesResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.GetAttributesResult">
+      <a id="GetAttributesResult:GetAttributesResult"></a>
+      <h4 class="signature"><a href="GetAttributesResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">GetAttributesResult</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item">
+      <a id="Item:Item"></a>
+      <h4 class="signature"><a href="Item.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Item</span>
+        
+        
+        <span class="result"> extends BatchOperations</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class which serves as a proxy to an Item within simpleDB.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ItemNameSnapshot">
+      <a id="ItemNameSnapshot:ItemNameSnapshot"></a>
+      <h4 class="signature"><a href="ItemNameSnapshot.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ItemNameSnapshot</span>
+        
+        
+        <span class="result"> extends MapProxy[String, Set[String]] with BatchOperations</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A map implementation which holds a snapshot of the properties and values of an item
+The 'name' field contains the name of the item.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ItemSnapshot">
+      <a id="ItemSnapshot:ItemSnapshot"></a>
+      <h4 class="signature"><a href="ItemSnapshot.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ItemSnapshot</span>
+        
+        
+        <span class="result"> extends MapProxy[String, Set[String]] with BatchOperations</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A map implementation which holds a snapshot of the properties and values of an item.</p>
+    </li><li visbl="pub" data-isabs="true" name="simplistic.ItemWithAttributesResult">
+      <a id="ItemWithAttributesResult:ItemWithAttributesResult"></a>
+      <h4 class="signature"><a href="ItemWithAttributesResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ItemWithAttributesResult</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ListDomainsResponse">
+      <a id="ListDomainsResponse:ListDomainsResponse"></a>
+      <h4 class="signature"><a href="ListDomainsResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListDomainsResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ListDomainsResult">
+      <a id="ListDomainsResult:ListDomainsResult"></a>
+      <h4 class="signature"><a href="ListDomainsResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListDomainsResult</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.PutAttributesResponse">
+      <a id="PutAttributesResponse:PutAttributesResponse"></a>
+      <h4 class="signature"><a href="PutAttributesResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PutAttributesResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.QueryParameters">
+      <a id="QueryParameters:QueryParameters"></a>
+      <h4 class="signature"><a href="QueryParameters.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">QueryParameters</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.QueryResponse">
+      <a id="QueryResponse:QueryResponse"></a>
+      <h4 class="signature"><a href="QueryResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">QueryResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.QueryResult">
+      <a id="QueryResult:QueryResult"></a>
+      <h4 class="signature"><a href="QueryResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">QueryResult</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.QueryWithAttributesResponse">
+      <a id="QueryWithAttributesResponse:QueryWithAttributesResponse"></a>
+      <h4 class="signature"><a href="QueryWithAttributesResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">QueryWithAttributesResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.QueryWithAttributesResult">
+      <a id="QueryWithAttributesResult:QueryWithAttributesResult"></a>
+      <h4 class="signature"><a href="QueryWithAttributesResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">QueryWithAttributesResult</span>
+        
+        
+        <span class="result"> extends ItemWithAttributesResult</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ResponseMetadata">
+      <a id="ResponseMetadata:ResponseMetadata"></a>
+      <h4 class="signature"><a href="ResponseMetadata.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ResponseMetadata</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.SelectResponse">
+      <a id="SelectResponse:SelectResponse"></a>
+      <h4 class="signature"><a href="SelectResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SelectResponse</span>
+        
+        
+        <span class="result"> extends SimpleDBResponse</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.SelectResult">
+      <a id="SelectResult:SelectResult"></a>
+      <h4 class="signature"><a href="SelectResult.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SelectResult</span>
+        
+        
+        <span class="result"> extends ItemWithAttributesResult</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Signer">
+      <a id="Signer:Signer"></a>
+      <h4 class="signature"><a href="Signer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Signer</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class to sign SimpleDB REST HTTP requests.</p>
+    </li><li visbl="pub" data-isabs="true" name="simplistic.SimpleAPI">
+      <a id="SimpleAPI:SimpleAPI"></a>
+      <h4 class="signature"><a href="SimpleAPI.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SimpleAPI</span>
+        
+        
+        <span class="result"> extends Concrete</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait provides a simple API for accessing Amazon SimpleDB.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.SimpleDBAccount">
+      <a id="SimpleDBAccount:SimpleDBAccount"></a>
+      <h4 class="signature"><a href="SimpleDBAccount.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SimpleDBAccount</span>
+        
+        
+        <span class="result"> extends SimpleAPI</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A simple concrete implementation of the SimpleDB API.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.SimpleDBResponse">
+      <a id="SimpleDBResponse:SimpleDBResponse"></a>
+      <h4 class="signature"><a href="SimpleDBResponse.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SimpleDBResponse</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="simplistic.Attributes">
+      <a id="Attributes:Attributes"></a>
+      <h4 class="signature"><a href="Attributes$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Attributes</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ConsistentRead">
+      <a id="ConsistentRead:ConsistentRead"></a>
+      <h4 class="signature"><a href="ConsistentRead$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ConsistentRead</span>
+        
+        
+        <span class="result"> extends Consistency with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Conversions">
+      <a id="Conversions:Conversions"></a>
+      <h4 class="signature"><a href="Conversions$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Conversions</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Serialization to/from String for SimpleDB data types</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Error">
+      <a id="Error:Error"></a>
+      <h4 class="signature"><a href="Error$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Error</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.EventuallyConsistent">
+      <a id="EventuallyConsistent:EventuallyConsistent"></a>
+      <h4 class="signature"><a href="EventuallyConsistent$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">EventuallyConsistent</span>
+        
+        
+        <span class="result"> extends Consistency with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Exceptions">
+      <a id="Exceptions:Exceptions"></a>
+      <h4 class="signature"><a href="Exceptions$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Exceptions</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Format">
+      <a id="Format:Format"></a>
+      <h4 class="signature"><a href="Format$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Format</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.HttpClientFactory">
+      <a id="HttpClientFactory:HttpClientFactory"></a>
+      <h4 class="signature"><a href="HttpClientFactory$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">HttpClientFactory</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.PutConditions">
+      <a id="PutConditions:PutConditions"></a>
+      <h4 class="signature"><a href="PutConditions$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">PutConditions</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.QueryParameters">
+      <a id="QueryParameters:QueryParameters"></a>
+      <h4 class="signature"><a href="QueryParameters$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">QueryParameters</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Quoting">
+      <a id="Quoting:Quoting"></a>
+      <h4 class="signature"><a href="Quoting$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Quoting</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Request">
+      <a id="Request:Request"></a>
+      <h4 class="signature"><a href="Request$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Request</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Select">
+      <a id="Select:Select"></a>
+      <h4 class="signature"><a href="Select$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Select</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.SimpleDBAccount">
+      <a id="SimpleDBAccount:SimpleDBAccount"></a>
+      <h4 class="signature"><a href="SimpleDBAccount$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SimpleDBAccount</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.SimpleDBReader">
+      <a id="SimpleDBReader:SimpleDBReader"></a>
+      <h4 class="signature"><a href="SimpleDBReader$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SimpleDBReader</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Functions for decomposing simpleDB specific types.</p>
+    </li><li visbl="pub" data-isabs="false" name="simplistic.StreamMaker">
+      <a id="StreamMaker:StreamMaker"></a>
+      <h4 class="signature"><a href="StreamMaker$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">StreamMaker</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.UnspecifiedConsistency">
+      <a id="UnspecifiedConsistency:UnspecifiedConsistency"></a>
+      <h4 class="signature"><a href="UnspecifiedConsistency$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">UnspecifiedConsistency</span>
+        
+        
+        <span class="result"> extends Consistency with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.XMLFields">
+      <a id="XMLFields:XMLFields"></a>
+      <h4 class="signature"><a href="XMLFields$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">XMLFields</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">functions for breaking down XML
+</p>
+    </li></ol>
+            </div>
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

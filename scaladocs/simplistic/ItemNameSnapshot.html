@@ -1,0 +1,2824 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>simplistic.ItemNameSnapshot</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../lib/jquery.js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type" onload="windowTitle();">
+
+      <p id="owner"><a href="package.html" class="extype" name="simplistic">simplistic</a></p>
+
+      <div id="definition">
+        <img src="../lib/class_big.png" />
+        <h1>ItemNameSnapshot</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ItemNameSnapshot</span>
+        
+        
+        <span class="result"> extends <span class="extype" name="scala.collection.MapProxy">MapProxy</span>[String, Set[String]] with <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>A map implementation which holds a snapshot of the properties and values of an item
+The 'name' field contains the name of the item.
+</p></div><div class="block">
+            linear super types: <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a>, <span class="extype" name="scala.collection.MapProxy">MapProxy</span>[String, Set[String]], <span class="extype" name="scala.collection.MapProxyLike">MapProxyLike</span>[String, Set[String], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.collection.IterableProxyLike">IterableProxyLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.collection.TraversableProxyLike">TraversableProxyLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.Proxy">Proxy</span>, <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], <span class="extype" name="scala.collection.MapLike">MapLike</span>[String, Set[String], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.collection.generic.Subtractable">Subtractable</span>[String, <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.PartialFunction">PartialFunction</span>[String, Set[String]], (String) ⇒ Set[String], <span class="extype" name="scala.collection.Iterable">Iterable</span>[(String, Set[String])], <span class="extype" name="scala.collection.IterableLike">IterableLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.collection.Traversable">Traversable</span>[(String, Set[String])], <span class="extype" name="scala.collection.generic.GenericTraversableTemplate">GenericTraversableTemplate</span>[(String, Set[String]), <span class="extype" name="scala.collection.Iterable">Iterable</span>], <span class="extype" name="scala.collection.TraversableLike">TraversableLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.collection.TraversableOnce">TraversableOnce</span>[(String, Set[String])], <span class="extype" name="scala.collection.generic.FilterMonadic">FilterMonadic</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], <span class="extype" name="scala.collection.generic.HasNewBuilder">HasNewBuilder</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]], AnyRef, <span class="extype" name="scala.Any">Any</span>
+          </div>
+            
+            
+            
+          </div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in">Alphabetic</li><li class="inherit out">By inheritance</li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="simplistic.ItemNameSnapshot">ItemNameSnapshot</li><li class="in" name="simplistic.BatchOperations">BatchOperations</li><li class="in" name="scala.collection.MapProxy">MapProxy</li><li class="in" name="scala.collection.MapProxyLike">MapProxyLike</li><li class="in" name="scala.collection.IterableProxyLike">IterableProxyLike</li><li class="in" name="scala.collection.TraversableProxyLike">TraversableProxyLike</li><li class="in" name="scala.Proxy">Proxy</li><li class="in" name="scala.collection.Map">Map</li><li class="in" name="scala.collection.MapLike">MapLike</li><li class="in" name="scala.collection.generic.Subtractable">Subtractable</li><li class="in" name="scala.PartialFunction">PartialFunction</li><li class="in" name="scala.Function1">Function1</li><li class="in" name="scala.collection.Iterable">Iterable</li><li class="in" name="scala.collection.IterableLike">IterableLike</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.collection.Traversable">Traversable</li><li class="in" name="scala.collection.generic.GenericTraversableTemplate">GenericTraversableTemplate</li><li class="in" name="scala.collection.TraversableLike">TraversableLike</li><li class="in" name="scala.collection.TraversableOnce">TraversableOnce</li><li class="in" name="scala.collection.generic.FilterMonadic">FilterMonadic</li><li class="in" name="scala.collection.generic.HasNewBuilder">HasNewBuilder</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        <div class="members" id="constructors">
+              <h3>Instance constructors</h3>
+              <ol><li visbl="pub" data-isabs="false" name="simplistic.ItemNameSnapshot#this">
+      <a id="this:ItemNameSnapshot"></a>
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol">
+        <span class="name">ItemNameSnapshot</span>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="self">self: Map[String, Set[String]]</span>)</span>
+        
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="prt" data-isabs="false" name="scala.collection.TraversableLike#Self">
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Self</span>
+        
+        
+        <span class="result"> = <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: TraversableLike
+        </div></div>
+          
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="scala.AnyRef#!=">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#!=">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef###">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$asInstanceOf">
+      <a id="$asInstanceOf[T0]():T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$isInstanceOf">
+      <a id="$isInstanceOf[T0]():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#+">
+      <a id="+[B1&gt;:B]((String, B1),(String, B1),(String, B1)*):Map[String, B1]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+</span>
+        <span class="tparams">[<span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="kv1">kv1: (String, B1)</span>, <span name="kv2">kv2: (String, B1)</span>, <span name="kvs">kvs: (String, B1)*</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, B1]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#+">
+      <a id="+[B1&gt;:B]((String, B1)):Map[String, B1]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+</span>
+        <span class="tparams">[<span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="kv">kv: (String, B1)</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, B1]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#++">
+      <a id="++[B1&gt;:B](TraversableOnce[(String, B1)]):Map[String, B1]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">++</span>
+        <span class="tparams">[<span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.TraversableOnce">TraversableOnce</span>[(String, B1)]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, B1]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#++">
+      <a id="++[B&gt;:A, That](TraversableOnce[B])(CanBuildFrom[Map[String, Set[String]], B, That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">++</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.TraversableOnce">TraversableOnce</span>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], B, That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#-">
+      <a id="-(String):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">-</span>
+        
+        <span class="params">(<span name="key">key: String</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike → Subtractable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.generic.Subtractable#-">
+      <a id="-(String,String,String*):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">-</span>
+        
+        <span class="params">(<span name="elem1">elem1: String</span>, <span name="elem2">elem2: String</span>, <span name="elems">elems: String*</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Subtractable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.generic.Subtractable#--">
+      <a id="--(TraversableOnce[String]):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">--</span>
+        
+        <span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.TraversableOnce">TraversableOnce</span>[String]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Subtractable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#/:">
+      <a id="/:[B](B)((B, (String, Set[String])) ⇒ B):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">/:</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, (String, Set[String])) ⇒ B</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#:\">
+      <a id=":\[B](B)(((String, Set[String]), B) ⇒ B):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">:\</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: ((String, Set[String]), B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#==">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#addString">
+      <a id="addString(StringBuilder,String,String,String):StringBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addString</span>
+        
+        <span class="params">(<span name="b">b: StringBuilder</span>, <span name="start">start: String</span>, <span name="sep">sep: String</span>, <span name="end">end: String</span>)</span>
+        <span class="result">: StringBuilder</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → TraversableProxyLike → MapLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#addString">
+      <a id="addString(StringBuilder):StringBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addString</span>
+        
+        <span class="params">(<span name="b">b: <span class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#addString">
+      <a id="addString(StringBuilder,String):StringBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addString</span>
+        
+        <span class="params">(<span name="b">b: <span class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</span></span>, <span name="sep">sep: String</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.PartialFunction#andThen">
+      <a id="andThen[C]((Set[String]) ⇒ C):PartialFunction[String, C]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">andThen</span>
+        <span class="tparams">[<span name="C">C</span>]</span>
+        <span class="params">(<span name="k">k: (Set[String]) ⇒ C</span>)</span>
+        <span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[String, C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: PartialFunction → Function1
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#apply">
+      <a id="apply(String):Set[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="key">key: String</span>)</span>
+        <span class="result">: Set[String]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike → Function1
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ItemNameSnapshot#batch">
+      <a id="batch:Batch"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">batch</span>
+        
+        
+        <span class="result">: <a href="Batch.html" class="extype" name="simplistic.Batch">Batch</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Return an object that can be used to create batch operations.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Return an object that can be used to create batch operations.</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="simplistic.ItemNameSnapshot">ItemNameSnapshot</a> → <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableLike#canEqual">
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">canEqual</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableLike → Equals
+        </div></div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span>
+        
+        <span class="params">()</span>
+        <span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#collect">
+      <a id="collect[B, That](PartialFunction[(String, Set[String]), B])(CanBuildFrom[Map[String, Set[String]], B, That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">collect</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="pf">pf: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[(String, Set[String]), B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], B, That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.Iterable#companion">
+      <a id="companion:GenericCompanion[Iterable]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">companion</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.generic.GenericCompanion">GenericCompanion</span>[<span class="extype" name="scala.collection.Iterable">Iterable</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Iterable → Traversable → GenericTraversableTemplate
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Function1#compose">
+      <a id="compose[A]((A) ⇒ String):(A) ⇒ Set[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">compose</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="g">g: (A) ⇒ String</span>)</span>
+        <span class="result">: (A) ⇒ Set[String]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Function1
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#contains">
+      <a id="contains(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">contains</span>
+        
+        <span class="params">(<span name="key">key: String</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#copyToArray">
+      <a id="copyToArray[B&gt;:A](Array[B]):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="xs">xs: <span class="extype" name="scala.Array">Array</span>[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#copyToArray">
+      <a id="copyToArray[B&gt;:A](Array[B],Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="xs">xs: <span class="extype" name="scala.Array">Array</span>[B]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#copyToArray">
+      <a id="copyToArray[B&gt;:A](Array[B],Int,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="xs">xs: <span class="extype" name="scala.Array">Array</span>[B]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="len">len: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#copyToBuffer">
+      <a id="copyToBuffer[B&gt;:A](Buffer[B]):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToBuffer</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="dest">dest: <span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#count">
+      <a id="count(((String, Set[String])) ⇒ Boolean):Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">count</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#default">
+      <a id="default(String):Set[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">default</span>
+        
+        <span class="params">(<span name="key">key: String</span>)</span>
+        <span class="result">: Set[String]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#drop">
+      <a id="drop(Int):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">drop</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#dropRight">
+      <a id="dropRight(Int):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">dropRight</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#dropWhile">
+      <a id="dropWhile(((String, Set[String])) ⇒ Boolean):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">dropWhile</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableLike#elements">
+      <a id="elements:Iterator[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">elements</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableLike
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>iterator' instead</code></p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.Map#empty">
+      <a id="empty:Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">empty</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Map → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#eq">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Proxy#equals">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p><p>The default implementations of this method is an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence
+relation]:
+ * It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.
+ * It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and
+   only if <code>y.equals(x)</code> returns <code>true</code>.
+ * It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.equals(y)</code> returns <code>true</code> and
+   <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</p><p>If you override this method, you should verify that your implementation remains an equivalence relation.
+Additionally, when overriding this method it is often necessary to override <code>hashCode</code> to ensure that objects
+that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same 
+scala.Int
+(<code>o1.hashCode.equals(o2.hashCode)</code>).
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          definition classes: Proxy → AnyRef → Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#exists">
+      <a id="exists(((String, Set[String])) ⇒ Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">exists</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#filter">
+      <a id="filter(((String, Set[String])) ⇒ Boolean):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">filter</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#filterKeys">
+      <a id="filterKeys((String) ⇒ Boolean):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">filterKeys</span>
+        
+        <span class="params">(<span name="p">p: (String) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#filterNot">
+      <a id="filterNot(((String, Set[String])) ⇒ Boolean):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">filterNot</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → TraversableProxyLike → MapLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#find">
+      <a id="find(((String, Set[String])) ⇒ Boolean):Option[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">find</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableLike#first">
+      <a id="first:(String, Set[String])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">first</span>
+        
+        
+        <span class="result">: (String, Set[String])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableLike
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>head' instead</code></p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableLike#firstOption">
+      <a id="firstOption:Option[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">firstOption</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableLike
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>headOption' instead</code></p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#flatMap">
+      <a id="flatMap[B, That](((String, Set[String])) ⇒ Traversable[B])(CanBuildFrom[Map[String, Set[String]], B, That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">flatMap</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="f">f: ((String, Set[String])) ⇒ <span class="extype" name="scala.collection.Traversable">Traversable</span>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], B, That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → FilterMonadic
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.generic.GenericTraversableTemplate#flatten">
+      <a id="flatten[B](((String, Set[String])) ⇒ Traversable[B]):Iterable[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">flatten</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="asTraversable">asTraversable: ((String, Set[String])) ⇒ <span class="extype" name="scala.collection.Traversable">Traversable</span>[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: GenericTraversableTemplate
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#foldLeft">
+      <a id="foldLeft[B](B)((B, (String, Set[String])) ⇒ B):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foldLeft</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, (String, Set[String])) ⇒ B</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#foldRight">
+      <a id="foldRight[B](B)(((String, Set[String]), B) ⇒ B):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foldRight</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: ((String, Set[String]), B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#forall">
+      <a id="forall(((String, Set[String])) ⇒ Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">forall</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#foreach">
+      <a id="foreach[B](((String, Set[String])) ⇒ B):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foreach</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: ((String, Set[String])) ⇒ B</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce → FilterMonadic
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.generic.GenericTraversableTemplate#genericBuilder">
+      <a id="genericBuilder[B]:Builder[B, Iterable[B]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">genericBuilder</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[B, <span class="extype" name="scala.collection.Iterable">Iterable</span>[B]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: GenericTraversableTemplate
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#get">
+      <a id="get(String):Option[Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">get</span>
+        
+        <span class="params">(<span name="key">key: String</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span>
+        <span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#getOrElse">
+      <a id="getOrElse[B1&gt;:B](String,⇒ B1):B1"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getOrElse</span>
+        <span class="tparams">[<span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="key">key: String</span>, <span name="default">default: ⇒ B1</span>)</span>
+        <span class="result">: B1</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#groupBy">
+      <a id="groupBy[K](((String, Set[String])) ⇒ K):Map[K, Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">groupBy</span>
+        <span class="tparams">[<span name="K">K</span>]</span>
+        <span class="params">(<span name="f">f: ((String, Set[String])) ⇒ K</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[K, <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#grouped">
+      <a id="grouped(Int):Iterator[Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">grouped</span>
+        
+        <span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#hasDefiniteSize">
+      <a id="hasDefiniteSize:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hasDefiniteSize</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Proxy#hashCode">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: Proxy → AnyRef → Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#head">
+      <a id="head:(String, Set[String])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">head</span>
+        
+        
+        <span class="result">: (String, Set[String])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#headOption">
+      <a id="headOption:Option[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">headOption</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#init">
+      <a id="init:Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">init</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#isDefinedAt">
+      <a id="isDefinedAt(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isDefinedAt</span>
+        
+        <span class="params">(<span name="key">key: String</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike → PartialFunction
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#isEmpty">
+      <a id="isEmpty:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isEmpty</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → TraversableProxyLike → MapLike → IterableLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableLike#isTraversableAgain">
+      <a id="isTraversableAgain:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isTraversableAgain</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#iterator">
+      <a id="iterator:Iterator[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">iterator</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → IterableProxyLike → MapLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#keySet">
+      <a id="keySet:Set[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">keySet</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[String]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#keys">
+      <a id="keys:Iterable[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">keys</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[String]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#keysIterator">
+      <a id="keysIterator:Iterator[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">keysIterator</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[String]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#last">
+      <a id="last:(String, Set[String])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">last</span>
+        
+        
+        <span class="result">: (String, Set[String])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#lastOption">
+      <a id="lastOption:Option[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lastOption</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.PartialFunction#lift">
+      <a id="lift:(String) ⇒ Option[Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lift</span>
+        
+        
+        <span class="result">: (String) ⇒ <span class="extype" name="scala.Option">Option</span>[Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: PartialFunction
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#map">
+      <a id="map[B, That](((String, Set[String])) ⇒ B)(CanBuildFrom[Map[String, Set[String]], B, That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">map</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="f">f: ((String, Set[String])) ⇒ B</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], B, That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → FilterMonadic
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapLike#mapElements">
+      <a id="mapElements[C]((Set[String]) ⇒ C):Map[String, C]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">mapElements</span>
+        <span class="tparams">[<span name="C">C</span>]</span>
+        <span class="params">(<span name="f">f: (Set[String]) ⇒ C</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapLike
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>mapValues' instead</code></p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#mapValues">
+      <a id="mapValues[C]((Set[String]) ⇒ C):Map[String, C]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mapValues</span>
+        <span class="tparams">[<span name="C">C</span>]</span>
+        <span class="params">(<span name="f">f: (Set[String]) ⇒ C</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#max">
+      <a id="max[B&gt;:A](Ordering[B]):(String, Set[String])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="cmp">cmp: Ordering[B]</span>)</span>
+        <span class="result">: (String, Set[String])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#min">
+      <a id="min[B&gt;:A](Ordering[B]):(String, Set[String])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="cmp">cmp: Ordering[B]</span>)</span>
+        <span class="result">: (String, Set[String])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#mkString">
+      <a id="mkString:String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mkString</span>
+        
+        
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#mkString">
+      <a id="mkString(String):String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mkString</span>
+        
+        <span class="params">(<span name="sep">sep: String</span>)</span>
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#mkString">
+      <a id="mkString(String,String,String):String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mkString</span>
+        
+        <span class="params">(<span name="start">start: String</span>, <span name="sep">sep: String</span>, <span name="end">end: String</span>)</span>
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ItemNameSnapshot#name">
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">name</span>
+        
+        
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#ne">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.collection.MapLike#newBuilder">
+      <a id="newBuilder:Builder[(String, Set[String]), Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">newBuilder</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[this] 
+        </div><div class="block">
+          definition classes: MapLike → TraversableLike → HasNewBuilder
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#nonEmpty">
+      <a id="nonEmpty:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">nonEmpty</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notify">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notifyAll">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.PartialFunction#orElse">
+      <a id="orElse[A1&lt;:A, B1&gt;:B](PartialFunction[A1, B1]):PartialFunction[A1, B1]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">orElse</span>
+        <span class="tparams">[<span name="A1">A1 &lt;: A</span>, <span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[A1, B1]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[A1, B1]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: PartialFunction
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#partition">
+      <a id="partition(((String, Set[String])) ⇒ Boolean):(Map[String, Set[String]], Map[String, Set[String]])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">partition</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#product">
+      <a id="product[B&gt;:A](Numeric[B]):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">product</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="num">num: Numeric[B]</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableLike#projection">
+      <a id="projection:IterableView[(String, Set[String]), Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">projection</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.IterableView">IterableView</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableLike
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>view' instead</code></p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#reduceLeft">
+      <a id="reduceLeft[B&gt;:A]((B, (String, Set[String])) ⇒ B):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceLeft</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, (String, Set[String])) ⇒ B</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#reduceLeftOption">
+      <a id="reduceLeftOption[B&gt;:A]((B, (String, Set[String])) ⇒ B):Option[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceLeftOption</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, (String, Set[String])) ⇒ B</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#reduceRight">
+      <a id="reduceRight[B&gt;:A](((String, Set[String]), B) ⇒ B):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceRight</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: ((String, Set[String]), B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#reduceRightOption">
+      <a id="reduceRightOption[B&gt;:A](((String, Set[String]), B) ⇒ B):Option[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceRightOption</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: ((String, Set[String]), B) ⇒ B</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableLike#repr">
+      <a id="repr:Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">repr</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableLike
+        </div></div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.collection.TraversableOnce#reversed">
+      <a id="reversed:List[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reversed</span>
+        
+        
+        <span class="result">: List[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[this] 
+        </div><div class="block">
+          definition classes: TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#sameElements">
+      <a id="sameElements[B&gt;:A](Iterable[B]):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sameElements</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.collection.Iterable">Iterable</span>[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#scanLeft">
+      <a id="scanLeft[B, That](B)((B, (String, Set[String])) ⇒ B)(CanBuildFrom[Map[String, Set[String]], B, That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scanLeft</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, (String, Set[String])) ⇒ B</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], B, That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#scanRight">
+      <a id="scanRight[B, That](B)(((String, Set[String]), B) ⇒ B)(CanBuildFrom[Map[String, Set[String]], B, That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scanRight</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: ((String, Set[String]), B) ⇒ B</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], B, That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ItemNameSnapshot#self">
+      <a id="self:Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">self</span>
+        
+        
+        <span class="result">: Map[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="simplistic.ItemNameSnapshot">ItemNameSnapshot</a> → TraversableProxyLike → Proxy
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#size">
+      <a id="size:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">size</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#slice">
+      <a id="slice(Int,Int):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">slice</span>
+        
+        <span class="params">(<span name="from">from: <span class="extype" name="scala.Int">Int</span></span>, <span name="until">until: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#sliding">
+      <a id="sliding[B&gt;:A](Int,Int):Iterator[Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sliding</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>, <span name="step">step: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#sliding">
+      <a id="sliding[B&gt;:A](Int):Iterator[Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sliding</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#span">
+      <a id="span(((String, Set[String])) ⇒ Boolean):(Map[String, Set[String]], Map[String, Set[String]])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">span</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#splitAt">
+      <a id="splitAt(Int):(Map[String, Set[String]], Map[String, Set[String]])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">splitAt</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: (<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#stringPrefix">
+      <a id="stringPrefix:String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">stringPrefix</span>
+        
+        
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#sum">
+      <a id="sum[B&gt;:A](Numeric[B]):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sum</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="num">num: Numeric[B]</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
+      <a id="synchronized[T0](T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: T0</span>)</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#tail">
+      <a id="tail:Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">tail</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#take">
+      <a id="take(Int):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">take</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#takeRight">
+      <a id="takeRight(Int):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">takeRight</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#takeWhile">
+      <a id="takeWhile(((String, Set[String])) ⇒ Boolean):Map[String, Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">takeWhile</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.collection.IterableLike#thisCollection">
+      <a id="thisCollection:Iterable[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">thisCollection</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[this] 
+        </div><div class="block">
+          definition classes: IterableLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toArray">
+      <a id="toArray[B&gt;:A](ClassManifest[B]):Array[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toArray</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Array">Array</span>[B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toBuffer">
+      <a id="toBuffer[B&gt;:A]:Buffer[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toBuffer</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.collection.IterableLike#toCollection">
+      <a id="toCollection(Map[String, Set[String]]):Iterable[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toCollection</span>
+        
+        <span class="params">(<span name="repr">repr: <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[this] 
+        </div><div class="block">
+          definition classes: IterableLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toIndexedSeq">
+      <a id="toIndexedSeq[B&gt;:A]:IndexedSeq[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIndexedSeq</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.collection.immutable.IndexedSeq">IndexedSeq</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toIterable">
+      <a id="toIterable:Iterable[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIterable</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toIterator">
+      <a id="toIterator:Iterator[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIterator</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toList">
+      <a id="toList:List[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toList</span>
+        
+        
+        <span class="result">: List[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toMap">
+      <a id="toMap[T, U](&lt;:&lt;[(String, Set[String]), (T, U)]):Map[T, U]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toMap</span>
+        <span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[(String, Set[String]), (T, U)]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[T, U]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toSeq">
+      <a id="toSeq:Seq[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toSeq</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toSet">
+      <a id="toSet[B&gt;:A]:Set[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toSet</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.collection.immutable.Set">Set</span>[B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toStream">
+      <a id="toStream:Stream[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toStream</span>
+        
+        
+        <span class="result">: Stream[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.ItemNameSnapshot#toString">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">* Friendly toString for diagnostics@return a string representation of the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>* Friendly toString for diagnostics@return a string representation of the object. */</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="simplistic.ItemNameSnapshot">ItemNameSnapshot</a> → Proxy → MapLike → Function1 → TraversableLike → AnyRef → Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableProxyLike#toTraversable">
+      <a id="toTraversable:Traversable[(String, Set[String])]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toTraversable</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Traversable">Traversable</span>[(String, Set[String])]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableProxyLike → TraversableLike → TraversableOnce
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.generic.GenericTraversableTemplate#transpose">
+      <a id="transpose[B](((String, Set[String])) ⇒ Traversable[B]):Iterable[Iterable[B]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">transpose</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="asTraversable">asTraversable: ((String, Set[String])) ⇒ <span class="extype" name="scala.collection.Traversable">Traversable</span>[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[<span class="extype" name="scala.collection.Iterable">Iterable</span>[B]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: GenericTraversableTemplate
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.generic.GenericTraversableTemplate#unzip">
+      <a id="unzip[A1, A2](((String, Set[String])) ⇒ (A1, A2)):(Iterable[A1], Iterable[A2])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unzip</span>
+        <span class="tparams">[<span name="A1">A1</span>, <span name="A2">A2</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="asPair">asPair: ((String, Set[String])) ⇒ (A1, A2)</span>)</span>
+        <span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[A1], <span class="extype" name="scala.collection.Iterable">Iterable</span>[A2])</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: GenericTraversableTemplate
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#updated">
+      <a id="updated[B1&gt;:B](String,B1):Map[String, B1]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">updated</span>
+        <span class="tparams">[<span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="key">key: String</span>, <span name="value">value: B1</span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[String, B1]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#values">
+      <a id="values:Iterable[Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">values</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterable">Iterable</span>[Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.MapProxyLike#valuesIterator">
+      <a id="valuesIterator:Iterator[Set[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">valuesIterator</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[Set[String]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MapProxyLike → MapLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#view">
+      <a id="view(Int,Int):IterableView[(String, Set[String]), Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">view</span>
+        
+        <span class="params">(<span name="from">from: <span class="extype" name="scala.Int">Int</span></span>, <span name="until">until: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.IterableView">IterableView</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → TraversableProxyLike → IterableLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#view">
+      <a id="view:IterableView[(String, Set[String]), Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">view</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.IterableView">IterableView</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → TraversableProxyLike → IterableLike → TraversableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.TraversableLike#withFilter">
+      <a id="withFilter(((String, Set[String])) ⇒ Boolean):FilterMonadic[(String, Set[String]), Map[String, Set[String]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">withFilter</span>
+        
+        <span class="params">(<span name="p">p: ((String, Set[String])) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.collection.generic.FilterMonadic">FilterMonadic</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: TraversableLike → FilterMonadic
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#zip">
+      <a id="zip[A1&gt;:A, B, That](Iterable[B])(CanBuildFrom[Map[String, Set[String]], (A1, B), That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zip</span>
+        <span class="tparams">[<span name="A1">A1 &gt;: A</span>, <span name="B">B</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.collection.Iterable">Iterable</span>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], (A1, B), That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#zipAll">
+      <a id="zipAll[B, A1&gt;:A, That](Iterable[B],A1,B)(CanBuildFrom[Map[String, Set[String]], (A1, B), That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zipAll</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="A1">A1 &gt;: A</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.collection.Iterable">Iterable</span>[B]</span>, <span name="thisElem">thisElem: A1</span>, <span name="thatElem">thatElem: B</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], (A1, B), That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.collection.IterableProxyLike#zipWithIndex">
+      <a id="zipWithIndex[A1&gt;:A, That](CanBuildFrom[Map[String, Set[String]], (A1, Int), That]):That"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zipWithIndex</span>
+        <span class="tparams">[<span name="A1">A1 &gt;: A</span>, <span name="That">That</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="bf">bf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]], (A1, <span class="extype" name="scala.Int">Int</span>), That]</span>)</span>
+        <span class="result">: That</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: IterableProxyLike → IterableLike
+        </div></div>
+          
+    </li></ol>
+            </div>
+
+        <div class="parent" name="simplistic.BatchOperations">
+              <h3>Inherited from <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a></h3>
+            </div><div class="parent" name="scala.collection.MapProxy">
+              <h3>Inherited from <span class="extype" name="scala.collection.MapProxy">MapProxy</span>[String, Set[String]]</h3>
+            </div><div class="parent" name="scala.collection.MapProxyLike">
+              <h3>Inherited from <span class="extype" name="scala.collection.MapProxyLike">MapProxyLike</span>[String, Set[String], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.collection.IterableProxyLike">
+              <h3>Inherited from <span class="extype" name="scala.collection.IterableProxyLike">IterableProxyLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.collection.TraversableProxyLike">
+              <h3>Inherited from <span class="extype" name="scala.collection.TraversableProxyLike">TraversableProxyLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.Proxy">
+              <h3>Inherited from <span class="extype" name="scala.Proxy">Proxy</span></h3>
+            </div><div class="parent" name="scala.collection.Map">
+              <h3>Inherited from <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]</h3>
+            </div><div class="parent" name="scala.collection.MapLike">
+              <h3>Inherited from <span class="extype" name="scala.collection.MapLike">MapLike</span>[String, Set[String], <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.collection.generic.Subtractable">
+              <h3>Inherited from <span class="extype" name="scala.collection.generic.Subtractable">Subtractable</span>[String, <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.PartialFunction">
+              <h3>Inherited from <span class="extype" name="scala.PartialFunction">PartialFunction</span>[String, Set[String]]</h3>
+            </div><div class="parent" name="scala.Function1">
+              <h3>Inherited from (String) ⇒ Set[String]</h3>
+            </div><div class="parent" name="scala.collection.Iterable">
+              <h3>Inherited from <span class="extype" name="scala.collection.Iterable">Iterable</span>[(String, Set[String])]</h3>
+            </div><div class="parent" name="scala.collection.IterableLike">
+              <h3>Inherited from <span class="extype" name="scala.collection.IterableLike">IterableLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.collection.Traversable">
+              <h3>Inherited from <span class="extype" name="scala.collection.Traversable">Traversable</span>[(String, Set[String])]</h3>
+            </div><div class="parent" name="scala.collection.generic.GenericTraversableTemplate">
+              <h3>Inherited from <span class="extype" name="scala.collection.generic.GenericTraversableTemplate">GenericTraversableTemplate</span>[(String, Set[String]), <span class="extype" name="scala.collection.Iterable">Iterable</span>]</h3>
+            </div><div class="parent" name="scala.collection.TraversableLike">
+              <h3>Inherited from <span class="extype" name="scala.collection.TraversableLike">TraversableLike</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.collection.TraversableOnce">
+              <h3>Inherited from <span class="extype" name="scala.collection.TraversableOnce">TraversableOnce</span>[(String, Set[String])]</h3>
+            </div><div class="parent" name="scala.collection.generic.FilterMonadic">
+              <h3>Inherited from <span class="extype" name="scala.collection.generic.FilterMonadic">FilterMonadic</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.collection.generic.HasNewBuilder">
+              <h3>Inherited from <span class="extype" name="scala.collection.generic.HasNewBuilder">HasNewBuilder</span>[(String, Set[String]), <span class="extype" name="scala.collection.Map">Map</span>[String, Set[String]]]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

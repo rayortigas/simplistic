@@ -1,0 +1,1103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>simplistic.Item</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../lib/jquery.js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type" onload="windowTitle();">
+
+      <p id="owner"><a href="package.html" class="extype" name="simplistic">simplistic</a></p>
+
+      <div id="definition">
+        <img src="../lib/class_big.png" />
+        <h1>Item</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Item</span>
+        
+        
+        <span class="result"> extends <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>A class which serves as a proxy to an Item within simpleDB.  This class holds none of the
+attributes of the item itself.  Calls to methods which read or write attributes to and
+from the item will result in network requests to SimpleDB.
+</p></div><div class="block">
+            linear super types: <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a>, AnyRef, <span class="extype" name="scala.Any">Any</span>
+          </div>
+            
+            
+            
+          </div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in">Alphabetic</li><li class="inherit out">By inheritance</li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="simplistic.Item">Item</li><li class="in" name="simplistic.BatchOperations">BatchOperations</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        <div class="members" id="constructors">
+              <h3>Instance constructors</h3>
+              <ol><li visbl="pub" data-isabs="false" name="simplistic.Item#this">
+      <a id="this:Item"></a>
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol">
+        <span class="name">Item</span>
+        
+        <span class="params">(<span name="domain">domain: <a href="Domain.html" class="extype" name="simplistic.Domain">Domain</a></span>, <span name="name">name: String</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="api">api: <a href="SimpleAPI.html" class="extype" name="simplistic.SimpleAPI">SimpleAPI</a></span>)</span>
+        
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="scala.AnyRef#!=">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#!=">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef###">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$asInstanceOf">
+      <a id="$asInstanceOf[T0]():T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$isInstanceOf">
+      <a id="$isInstanceOf[T0]():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#+=">
+      <a id="+=(String,Set[String]):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+=</span>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="values">values: Set[String]</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Add multiple values to an attribute of this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Add multiple values to an attribute of this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#+=">
+      <a id="+=((String, String)*):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+=</span>
+        
+        <span class="params">(<span name="pairs">pairs: (String, String)*</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Add multiple values to this attribute by specifying a series of mappings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Add multiple values to this attribute by specifying a series of mappings.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#+=">
+      <a id="+=((String, String)):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+=</span>
+        
+        <span class="params">(<span name="pair">pair: (String, String)</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Add a single value to an attribute of this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Add a single value to an attribute of this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#+=?">
+      <a id="+=?(PutCondition)((String, String)*):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+=?</span>
+        
+        <span class="params">(<span name="condition">condition: <a href="PutConditions$$PutCondition.html" class="extype" name="simplistic.PutConditions.PutCondition">PutCondition</a></span>)</span><span class="params">(<span name="pairs">pairs: (String, String)*</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#-=">
+      <a id="-=(simplistic.Attributes.Attribute[_]):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">-=</span>
+        
+        <span class="params">(<span name="attribute">attribute: simplistic.Attributes.Attribute[_]</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#-=">
+      <a id="-=(String):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">-=</span>
+        
+        <span class="params">(<span name="attributeName">attributeName: String</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Delete a single attribute in this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Delete a single attribute in this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#-=">
+      <a id="-=((String, String)):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">-=</span>
+        
+        <span class="params">(<span name="pair">pair: (String, String)</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Delete a single attribute value pair in this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Delete a single attribute value pair in this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#==">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#addSeq">
+      <a id="addSeq(Seq[(String, String)]):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addSeq</span>
+        
+        <span class="params">(<span name="pairs">pairs: Seq[(String, String)]</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Add multiple values to this attribute by specifying a sequence of mappings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Add multiple values to this attribute by specifying a sequence of mappings.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#api">
+      <a id="api:SimpleAPI"></a>
+      <h4 class="signature">
+      <span class="kind">implicit val</span>
+      <span class="symbol">
+        <span class="name">api</span>
+        
+        
+        <span class="result">: <a href="SimpleAPI.html" class="extype" name="simplistic.SimpleAPI">SimpleAPI</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: implicit 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#attribute">
+      <a id="attribute(simplistic.Attributes.Attribute[_])(Consistency):Set[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">attribute</span>
+        
+        <span class="params">(<span name="attribute">attribute: simplistic.Attributes.Attribute[_]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="consistency">consistency: <a href="Consistency.html" class="extype" name="simplistic.Consistency">Consistency</a></span>)</span>
+        <span class="result">: Set[String]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#attribute">
+      <a id="attribute(String)(Consistency):Set[String]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">attribute</span>
+        
+        <span class="params">(<span name="attributeName">attributeName: String</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="consistency">consistency: <a href="Consistency.html" class="extype" name="simplistic.Consistency">Consistency</a></span>)</span>
+        <span class="result">: Set[String]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Read a single attribute from this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Read a single attribute from this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#attributes">
+      <a id="attributes(Set[String])(Consistency):ItemSnapshot"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">attributes</span>
+        
+        <span class="params">(<span name="attributes">attributes: Set[String]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="consistency">consistency: <a href="Consistency.html" class="extype" name="simplistic.Consistency">Consistency</a></span>)</span>
+        <span class="result">: <a href="ItemSnapshot.html" class="extype" name="simplistic.ItemSnapshot">ItemSnapshot</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Read a selection of attributes from this item</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Read a selection of attributes from this item</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#attributes">
+      <a id="attributes(Consistency):ItemSnapshot"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">attributes</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="consistency">consistency: <a href="Consistency.html" class="extype" name="simplistic.Consistency">Consistency</a></span>)</span>
+        <span class="result">: <a href="ItemSnapshot.html" class="extype" name="simplistic.ItemSnapshot">ItemSnapshot</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Read all of the attributes from this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Read all of the attributes from this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#attributesOption">
+      <a id="attributesOption(Consistency):Option[ItemSnapshot]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">attributesOption</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="consistency">consistency: <a href="Consistency.html" class="extype" name="simplistic.Consistency">Consistency</a></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="ItemSnapshot.html" class="extype" name="simplistic.ItemSnapshot">ItemSnapshot</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#batch">
+      <a id="batch:Batch"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">batch</span>
+        
+        
+        <span class="result">: <a href="Batch.html" class="extype" name="simplistic.Batch">Batch</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Return an object that can be used to create batch operations.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Return an object that can be used to create batch operations.</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="simplistic.Item">Item</a> → <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#clear">
+      <a id="clear():ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clear</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Delete all of the attributes in this item.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Delete all of the attributes in this item.</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span>
+        
+        <span class="params">()</span>
+        <span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#delete">
+      <a id="delete():ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">delete</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Delete the item -- equivalent to clear()</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Delete the item -- equivalent to clear()</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#domain">
+      <a id="domain:Domain"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">domain</span>
+        
+        
+        <span class="result">: <a href="Domain.html" class="extype" name="simplistic.Domain">Domain</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#eq">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#equals">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p><p>The default implementations of this method is an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence
+relation]:
+ * It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.
+ * It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and
+   only if <code>y.equals(x)</code> returns <code>true</code>.
+ * It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.equals(y)</code> returns <code>true</code> and
+   <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</p><p>If you override this method, you should verify that your implementation remains an equivalence relation.
+Additionally, when overriding this method it is often necessary to override <code>hashCode</code> to ensure that objects
+that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same 
+scala.Int
+(<code>o1.hashCode.equals(o2.hashCode)</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span>
+        <span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#hashCode">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#name">
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">name</span>
+        
+        
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#ne">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notify">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notifyAll">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#path">
+      <a id="path:String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">path</span>
+        
+        
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Return a string associating this item with it's domain in the form &quot;domain.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Return a string associating this item with it's domain in the form &quot;domain.item&quot;</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#set">
+      <a id="set((String, String)*):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">set</span>
+        
+        <span class="params">(<span name="pairs">pairs: (String, String)*</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Replace the values of multiple attributes in this item with a series of mappings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Replace the values of multiple attributes in this item with a series of mappings.
+</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#set">
+      <a id="set(String,Set[String]):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">set</span>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="values">values: Set[String]</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Replace the value of an attribute in this item with a set of values.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Replace the value of an attribute in this item with a set of values.  Any previously
+existing values for this item will be deleted.
+</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#set">
+      <a id="set((String, String)):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">set</span>
+        
+        <span class="params">(<span name="pair">pair: (String, String)</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Replace the value of an attribute in this item with a single value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Replace the value of an attribute in this item with a single value.  Any previously
+existing values for this item will be deleted.
+</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#setIf">
+      <a id="setIf(PutCondition)((String, String)*):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">setIf</span>
+        
+        <span class="params">(<span name="condition">condition: <a href="PutConditions$$PutCondition.html" class="extype" name="simplistic.PutConditions.PutCondition">PutCondition</a></span>)</span><span class="params">(<span name="pairs">pairs: (String, String)*</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Conditionally replace the values of multiple attributes in this item with a series of mappings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Conditionally replace the values of multiple attributes in this item with a series of mappings.
+</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#setSeq">
+      <a id="setSeq(Seq[(String, String)]):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">setSeq</span>
+        
+        <span class="params">(<span name="pairs">pairs: Seq[(String, String)]</span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Replace the values of multiple attributes in this item with a series of mappings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Replace the values of multiple attributes in this item with a series of mappings.
+</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
+      <a id="synchronized[T0](T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: T0</span>)</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#toString">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span>
+        
+        <span class="params">()</span>
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a string representation of the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="simplistic.Item">Item</a> → AnyRef → Any
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="simplistic.Item#update">
+      <a id="update(Map[String, (Set[String], Boolean)],PutCondition):ResponseMetadata"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">update</span>
+        
+        <span class="params">(<span name="values">values: Map[String, (Set[String], <span class="extype" name="scala.Boolean">Boolean</span>)]</span>, <span name="conditional">conditional: <a href="PutConditions$$PutCondition.html" class="extype" name="simplistic.PutConditions.PutCondition">PutCondition</a> =<span class="defval" name='<span class="name"><a href="PutConditions$$NoCondition$.html">NoCondition</a></span>'> ...</span></span>)</span>
+        <span class="result">: <a href="ResponseMetadata.html" class="extype" name="simplistic.ResponseMetadata">ResponseMetadata</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Update the contents of this item with a map of attributes names and a set of values
+and boolean for each one.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Update the contents of this item with a map of attributes names and a set of values
+and boolean for each one.  If the boolean is true, the existing values will be
+replace with those in the set, otherwise the set of values will be added to the
+existing ones.</p><p>This is the analog of the 'PutAttributes' request.
+</p></div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li></ol>
+            </div>
+
+        <div class="parent" name="simplistic.BatchOperations">
+              <h3>Inherited from <a href="BatchOperations.html" class="extype" name="simplistic.BatchOperations">BatchOperations</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
