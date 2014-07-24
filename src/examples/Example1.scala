@@ -13,5 +13,5 @@ account.domain("mydomain").items.toList
 account.domain("mydomain") item ("foo") += ("bar" -> "baz")
 
 // Query mydomain and print results
-account.select ("select * from mydomain") foreach { e => println(e.name) }
+account.select ("* from mydomain") foreach { e => println(e.name) }
 
